@@ -1,0 +1,137 @@
+<!--
+OpenNOMS (Noise and Operations Management System)
+    Copyright (C) 2012  Farallon Geographics, Inc
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	
+Contact: info@fargeo.com
+-->
+
+<featureType>
+  <id>FeatureTypeInfoImpl--19376d34:133f636e97e:-6d88</id>
+  <name>macnoise</name>
+  <nativeName>macnoise3</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-638a63cc:133cde39f9a:-7ffe</id>
+  </namespace>
+  <title>macnoise</title>
+  <nativeCRS class="projected">PROJCS[&quot;NAD83 / UTM zone 15N&quot;, &#xd;
+  GEOGCS[&quot;NAD83&quot;, &#xd;
+    DATUM[&quot;North American Datum 1983&quot;, &#xd;
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], &#xd;
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], &#xd;
+      AUTHORITY[&quot;EPSG&quot;,&quot;6269&quot;]], &#xd;
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], &#xd;
+    UNIT[&quot;degree&quot;, 0.017453292519943295], &#xd;
+    AXIS[&quot;Geodetic longitude&quot;, EAST], &#xd;
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], &#xd;
+    AUTHORITY[&quot;EPSG&quot;,&quot;4269&quot;]], &#xd;
+  PROJECTION[&quot;Transverse_Mercator&quot;, AUTHORITY[&quot;EPSG&quot;,&quot;9807&quot;]], &#xd;
+  PARAMETER[&quot;central_meridian&quot;, -93.0], &#xd;
+  PARAMETER[&quot;latitude_of_origin&quot;, 0.0], &#xd;
+  PARAMETER[&quot;scale_factor&quot;, 0.9996], &#xd;
+  PARAMETER[&quot;false_easting&quot;, 500000.0], &#xd;
+  PARAMETER[&quot;false_northing&quot;, 0.0], &#xd;
+  UNIT[&quot;m&quot;, 1.0], &#xd;
+  AXIS[&quot;Easting&quot;, EAST], &#xd;
+  AXIS[&quot;Northing&quot;, NORTH], &#xd;
+  AUTHORITY[&quot;EPSG&quot;,&quot;26915&quot;]]</nativeCRS>
+  <srs>EPSG:26915</srs>
+  <nativeBoundingBox>
+    <minx>409881.0</minx>
+    <maxx>556218.0</maxx>
+    <miny>4895839.0</miny>
+    <maxy>5043912.01</maxy>
+    <crs class="projected">EPSG:26915</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-94.154</minx>
+    <maxx>-92.28</maxx>
+    <miny>44.21</miny>
+    <maxy>45.549</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>macnoise3</name>
+        <sql>SELECT * from opennoms.grabflights_opennoms2(&#xd;
+    &apos;%isorange%&apos;, --isorange&#xd;
+    &apos;%airport%&apos;,-- airport&#xd;
+    &apos;%adflag%&apos;, --adflagin&#xd;
+    &apos;%runway%&apos;, --runwayin&#xd;
+    &apos;%timemode%&apos;, --timemode&#xd;
+    &apos;%timesubset%&apos;, --timesubset&#xd;
+    &apos;%publicmode%&apos;, --publicmode&#xd;
+    &apos;%mactype%&apos;, --mactypein&#xd;
+    &apos;%airline%&apos;, --airlinein&#xd;
+    &apos;%minalt%&apos;, --minalt&#xd;
+    &apos;%maxalt%&apos;, --maxalt&#xd;
+    &apos;%extrasql%&apos; -- extrasql&#xd;
+)</sql>
+        <geometry>
+          <name>targets</name>
+          <type>Geometry</type>
+          <srid>26915</srid>
+        </geometry>
+        <parameter>
+          <name>extrasql</name>
+        </parameter>
+        <parameter>
+          <name>runway</name>
+        </parameter>
+        <parameter>
+          <name>publicmode</name>
+        </parameter>
+        <parameter>
+          <name>adflag</name>
+        </parameter>
+        <parameter>
+          <name>timemode</name>
+        </parameter>
+        <parameter>
+          <name>minalt</name>
+        </parameter>
+        <parameter>
+          <name>airport</name>
+          <defaultValue>MSP,STP,FCM,NONE</defaultValue>
+        </parameter>
+        <parameter>
+          <name>mactype</name>
+        </parameter>
+        <parameter>
+          <name>isorange</name>
+          <defaultValue>2011-08-05 16:00:00/2011-08-06 16:10:00</defaultValue>
+        </parameter>
+        <parameter>
+          <name>maxalt</name>
+        </parameter>
+        <parameter>
+          <name>airline</name>
+        </parameter>
+        <parameter>
+          <name>timesubset</name>
+        </parameter>
+      </virtualTable>
+    </entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-638a63cc:133cde39f9a:-7f2a</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

@@ -1,0 +1,75 @@
+<!--
+OpenNOMS (Noise and Operations Management System)
+    Copyright (C) 2012  Farallon Geographics, Inc
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	
+Contact: info@fargeo.com
+-->
+
+<featureType>
+  <id>FeatureTypeInfoImpl-638a63cc:133cde39f9a:-7f29</id>
+  <name>operations</name>
+  <nativeName>operations</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-638a63cc:133cde39f9a:-7ffe</id>
+  </namespace>
+  <title>operations</title>
+  <nativeCRS class="projected">PROJCS[&quot;NAD83 / UTM zone 15N&quot;, &#xd;
+  GEOGCS[&quot;NAD83&quot;, &#xd;
+    DATUM[&quot;North American Datum 1983&quot;, &#xd;
+      SPHEROID[&quot;GRS 1980&quot;, 6378137.0, 298.257222101, AUTHORITY[&quot;EPSG&quot;,&quot;7019&quot;]], &#xd;
+      TOWGS84[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0], &#xd;
+      AUTHORITY[&quot;EPSG&quot;,&quot;6269&quot;]], &#xd;
+    PRIMEM[&quot;Greenwich&quot;, 0.0, AUTHORITY[&quot;EPSG&quot;,&quot;8901&quot;]], &#xd;
+    UNIT[&quot;degree&quot;, 0.017453292519943295], &#xd;
+    AXIS[&quot;Geodetic longitude&quot;, EAST], &#xd;
+    AXIS[&quot;Geodetic latitude&quot;, NORTH], &#xd;
+    AUTHORITY[&quot;EPSG&quot;,&quot;4269&quot;]], &#xd;
+  PROJECTION[&quot;Transverse_Mercator&quot;], &#xd;
+  PARAMETER[&quot;central_meridian&quot;, -93.0], &#xd;
+  PARAMETER[&quot;latitude_of_origin&quot;, 0.0], &#xd;
+  PARAMETER[&quot;scale_factor&quot;, 0.9996], &#xd;
+  PARAMETER[&quot;false_easting&quot;, 500000.0], &#xd;
+  PARAMETER[&quot;false_northing&quot;, 0.0], &#xd;
+  UNIT[&quot;m&quot;, 1.0], &#xd;
+  AXIS[&quot;Easting&quot;, EAST], &#xd;
+  AXIS[&quot;Northing&quot;, NORTH], &#xd;
+  AUTHORITY[&quot;EPSG&quot;,&quot;26915&quot;]]</nativeCRS>
+  <srs>EPSG:26915</srs>
+  <nativeBoundingBox>
+    <minx>408492.0</minx>
+    <maxx>556536.0</maxx>
+    <miny>4895810.0</miny>
+    <maxy>5043912.5</maxy>
+    <crs class="projected">EPSG:26915</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-94.172</minx>
+    <maxx>-92.276</maxx>
+    <miny>44.21</miny>
+    <maxy>45.549</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="cachingEnabled">false</entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-638a63cc:133cde39f9a:-7f2a</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

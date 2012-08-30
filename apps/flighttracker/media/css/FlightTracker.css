@@ -1,0 +1,104 @@
+﻿/*
+OpenNOMS (Noise and Operations Management System)
+    Copyright (C) 2012  Farallon Geographics, Inc
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	
+Contact: info@fargeo.com
+*/
+.header-area {
+  background-color: #356AA0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  color: white;
+}
+.header-logo {
+  background-image: url(../images/mac_logo_v3.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.trans-blue{
+    background-image:url(../images/trans-blue.png) !important;
+    background-color: transparent;
+}
+.world {
+	background-image:url(../images/silk/icons/world.png) !important;
+}
+.printer {
+	background-image:url(../images/silk/icons/printer.png) !important;
+}
+.clock {
+	background-image:url(../images/silk/icons/clock.png) !important;
+}
+.clockgo {
+	background-image:url(../images/silk/icons/clock_go.png) !important;
+}
+.coggo {
+	background-image:url(../images/silk/icons/cog_go.png) !important;
+}
+.email {
+	background-image:url(../images/silk/icons/email.png) !important;
+}
+.map {
+	background-image:url(../images/silk/icons/map.png) !important;
+}
+.sound {
+	background-image:url(../images/silk/icons/sound.png) !important;
+}
+.refresh {
+	background-image:url(../images/silk/icons/arrow_refresh.png) !important;
+}
+.ruler {
+	background-image:url(../images/geosilk/ruler.png) !important;
+}
+.rulersquare {
+	background-image:url(../images/geosilk/ruler_square.png) !important;
+}
+.lineblue {
+	background-image:url(../images/geosilk/line_blue.png) !important;
+}
+.play {
+	background-image:url(../images/silk/icons/control_play.png) !important;
+}
+.pause {
+	background-image:url(../images/silk/icons/control_pause.png) !important;
+}
+.link {
+	background-image:url(../images/silk/icons/link.png) !important;
+}
+.plane {
+	background-image:url(../images/plane.png) !important;
+}
+.microphone {
+	background-image:url(../images/microphone.png) !important;
+}
+.loading{
+    background-image: url("http://cdn.sencha.io/ext-4.0.7-gpl/resources/themes/images/default/grid/loading.gif");
+}
+.icon-center {
+    background-position: 50% 50%;
+}
+
+.x-grid-checkheader-editor .x-form-cb-wrap {
+    text-align: center;
+}
+
+.x-grid-checkheader .x-form-checkbox {
+    margin: auto; 
+    cursor: pointer;
+}
+
+.x-grid-row-partialchecked .x-grid-row-checker {
+    background-image: url('../images/partialchecked.gif');
+}

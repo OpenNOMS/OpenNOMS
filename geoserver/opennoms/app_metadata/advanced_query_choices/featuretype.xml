@@ -1,0 +1,48 @@
+<!-- OpenNOMS (Noise and Operations Management System)
+    Copyright (C) 2012  Farallon Geographics, Inc
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see http://www.gnu.org/licenses/.
+	
+Contact: info@fargeo.com
+-->
+<featureType>
+  <id>FeatureTypeInfoImpl-638a63cc:133cde39f9a:-7faa</id>
+  <name>advanced_query_choices</name>
+  <nativeName>advanced_query_choices</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-638a63cc:133cde39f9a:-7ffe</id>
+  </namespace>
+  <title>advanced_query_choices</title>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-638a63cc:133cde39f9a:-7ffd</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>

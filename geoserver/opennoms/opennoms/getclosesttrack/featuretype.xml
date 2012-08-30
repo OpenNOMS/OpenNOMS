@@ -1,0 +1,120 @@
+<!--
+OpenNOMS (Noise and Operations Management System)
+    Copyright (C) 2012  Farallon Geographics, Inc
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+	
+Contact: info@fargeo.com
+-->
+
+<featureType>
+  <id>FeatureTypeInfoImpl--19376d34:133fbbd69ac:1eb4</id>
+  <name>getclosesttrack</name>
+  <nativeName>getclosesttrack</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-638a63cc:133cde39f9a:-7ffe</id>
+  </namespace>
+  <title>getclosesttrack</title>
+  <srs>EPSG:26915</srs>
+  <nativeBoundingBox>
+    <minx>-1.0</minx>
+    <maxx>0.0</maxx>
+    <miny>-1.0</miny>
+    <maxy>0.0</maxy>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-97.489</minx>
+    <maxx>-97.489</maxx>
+    <miny>0.0</miny>
+    <maxy>0.0</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>getclosesttrack</name>
+        <sql>select opnum,mactype,adflag,airport,runway,otherport,flight_id,airline,stime::timestamp,etime::timestamp,&#xd;
+astext(targets) as wkt&#xd;
+from opennoms.grabflights_opennoms2(&#xd;
+    &apos;%isorange%&apos;, --isorange&#xd;
+    &apos;%airport%&apos;,-- airport&#xd;
+    &apos;%adflag%&apos;, --adflagin&#xd;
+    &apos;%runway%&apos;, --runwayin&#xd;
+    &apos;%timemode%&apos;, --timemode&#xd;
+    &apos;%timesubset%&apos;, --timesubset&#xd;
+    &apos;%publicmode%&apos;, --publicmode&#xd;
+    &apos;%mactype%&apos;, --mactypein&#xd;
+    &apos;%airline%&apos;, --airlinein&#xd;
+    &apos;%minalt%&apos;, --minalt&#xd;
+    &apos;%maxalt%&apos;, --maxalt&#xd;
+    &apos;%extrasql%&apos; -- extrasql&#xd;
+)&#xd;
+where &#xd;
+distance(targets,setsrid(makepoint(%x%,%y%),26915))&lt;=2000&#xd;
+order by distance(targets,setsrid(makepoint(%x%,%y%),26915)) asc limit 1</sql>
+        <parameter>
+          <name>extrasql</name>
+        </parameter>
+        <parameter>
+          <name>runway</name>
+        </parameter>
+        <parameter>
+          <name>publicmode</name>
+        </parameter>
+        <parameter>
+          <name>adflag</name>
+        </parameter>
+        <parameter>
+          <name>timemode</name>
+        </parameter>
+        <parameter>
+          <name>minalt</name>
+        </parameter>
+        <parameter>
+          <name>airport</name>
+        </parameter>
+        <parameter>
+          <name>mactype</name>
+        </parameter>
+        <parameter>
+          <name>x</name>
+          <defaultValue>0</defaultValue>
+        </parameter>
+        <parameter>
+          <name>y</name>
+          <defaultValue>0</defaultValue>
+        </parameter>
+        <parameter>
+          <name>isorange</name>
+        </parameter>
+        <parameter>
+          <name>maxalt</name>
+        </parameter>
+        <parameter>
+          <name>airline</name>
+        </parameter>
+        <parameter>
+          <name>timesubset</name>
+        </parameter>
+      </virtualTable>
+    </entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-638a63cc:133cde39f9a:-7f2a</id>
+  </store>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+</featureType>
